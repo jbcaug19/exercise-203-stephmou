@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body><form action="#"th:action="@{/sonform}" th:object="${song}" methode=post">
+    Name: <input type="text" th:field="*{name}" /><br>
+    Artist: <input type="text" th:field="*{artist}" /><br>
+    Album:  <input type="text" th:field="*{album}" /><br>
+    Rating: <input type="numbert" th:field="*{rating}" /><br>
+    Year:   <input type="number" th:field="*{year}" /><br>
+    <input type="submit" value="Submit" />
+</form></body>
+</html>
